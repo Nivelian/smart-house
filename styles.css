@@ -1,0 +1,14 @@
+body {
+  background: #424242;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart {
+  height: calc(50% - 8px);
+}
