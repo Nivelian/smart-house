@@ -37,7 +37,7 @@ window.onload = () => {
     container.appendChild(chartDiv);
 
     Highcharts.chart(chartDiv, {
-      chart: {marginLeft: 40, spacingTop: 20, spacingBottom: 20},
+      chart: {marginLeft: 40, spacingTop: 20, spacingBottom: 20, zoomType: 'x'},
       title: {text: x.name, align: 'left', margin: 0, x: 30},
       credits: {enabled: false},
       legend: {enabled: false},
