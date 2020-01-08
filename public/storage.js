@@ -14,7 +14,7 @@ firebase.initializeApp(fbConfig);
 
 let let_ = f => f();
 let transpose = ll => ll[0].map((_, i) => ll.map(l => l[i]));
-let toTimestamps = l => l.map(([k, x]) => [+moment(k, 'DD-MM-YYYYTHH:mm:ss'), x]);
+let toTimestamps = l => l.map(([k, x]) => [+moment(k, 'YYYY-MM-DDTHH:mm:ss'), x]);
 let sort = l => l.slice().sort((x, y) => +x[0] - +y[0]);
 let convert = x => transpose(sort( toTimestamps(Object.entries(x.val())) ).map(([k, x]) =>[[k, x.temperature], [k, x.humidity]]));
 
